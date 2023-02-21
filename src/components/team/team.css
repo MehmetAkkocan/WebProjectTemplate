@@ -1,0 +1,74 @@
+.Team h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+.Team h2 {
+  text-align: center;
+}
+.Team-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Team-item {
+  width: 15%;
+  margin: 3% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.Team-item_img {
+  width: 50%;
+}
+.Team-item_img img {
+  width: 100%;
+  border-radius: 10rem;
+}
+.Team-item_name {
+  margin: 3% 0;
+  color: var(--color-white);
+}
+.Team-item_name span {
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px var(--color-subtext);
+  
+}
+.Team-item_title {
+  color: var(--color-white);
+  margin-bottom: 3%;
+}
+.Team-logo{
+  width: 8vh;
+  height: 8vh;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 1vh;
+}
+.Team-logo:hover{
+  transition-duration: .3s;
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+@media screen and (min-width: 2200px) {
+  .Team-item_name span {
+    font-size: 3rem;
+  }
+  .Team-item_title{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Team-item {
+    width: 50%;
+  }
+  .Team-item_name span {
+    font-size: 1.25rem;
+  }
+  .Team-item_title {
+    font-size: 0.75rem;
+  }
+}

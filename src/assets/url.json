@@ -1,0 +1,11 @@
+{
+    "links":{
+        "discord":"https://discord.com",
+        "google":"https://www.google.com",
+        "youtube":"https://www.youtube.com",
+        "twitter":"https://twitter.com",
+        "linkedin":{
+            "test":"https://www.linkedin.com/"
+        }
+    }
+}

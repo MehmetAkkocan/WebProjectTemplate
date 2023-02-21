@@ -1,0 +1,65 @@
+.link3 h3 {
+  text-align: center;
+  margin: 10% 0 2%;
+  font-weight: 700;
+  font-size: 5.32vh;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+.link3-holder {
+  padding: 0 20%;
+}
+.link3-holder video {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 5px #000000;
+  padding: 1%;
+}
+.link3-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 1%;
+}
+.link3-buttons button {
+  transition-duration: 0.5s;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 0.5rem;
+  font-size: 2.5vh;
+  border: none;
+  background: url("../../assets/btn.png") center no-repeat;
+  background-size: contain;
+  width: 22.23vh;
+  height: 6.7vh;
+}
+.link3-buttons button:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+@media screen and (max-width: 1050px) {
+  .link3-holder {
+    padding: 0 10%;
+  }
+  .link3-buttons button {
+    font-size: 1.5vh;
+    width: 14vh;
+    height: 4vh;
+  }
+  .link3 h3 {
+    font-size: 4vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  .link3 h3 {
+    margin: 0%;
+  }
+  .link3-holder {
+    padding: 0 10%;
+  }
+  .link3-buttons button {
+    font-size: 1.25vh;
+    width: 18.91vh;
+    height: 5.7vh;
+  }
+}

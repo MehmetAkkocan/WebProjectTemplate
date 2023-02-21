@@ -1,0 +1,1 @@
+export {default as GalleryP} from './gallery/galleryP'

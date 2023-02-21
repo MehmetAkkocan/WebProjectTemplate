@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+body {
+  background: var(--color-bg);
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+::-webkit-scrollbar{
+  width:0px;
+}
+.gradient__bg {
+  background: url('./assets/bg.jpg') center repeat;
+  background-size: contain;
+}
+.gradient__text {
+  color: #AE67FA;
+  background: #AE67FA;
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(90deg, #AE67FA 0%, #F49867 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, #AE67FA 0%, #F49867 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, #AE67FA 0%, #F49867 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F49867', endColorstr='#AE67FA', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, #AE67FA 0%, #F49867 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, #AE67FA 0%, #F49867 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-family: "dazzle-unicase",sans-serif;
+  font-size: 4.5rem;
+  line-height: 10rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+}
+.gradient__text2 {
+  color: #AE67FA;
+  background: #AE67FA;
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(90deg, #ffed85 0%, #ff85eb 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, #ffed85 0%, #ff85eb 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, #ffed85 0%, #ff85eb 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff85eb', endColorstr='#ffed85', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, #ffed85 0%, #ff85eb 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, #ffed85 0%, #ff85eb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center; 
+  font-weight: 700;
+  font-family: "dazzle-unicase",sans-serif;
+  font-size: 2.75rem;
+  line-height: 10rem;
+}
+.section__padding {
+  padding: 6rem 8rem;
+}
+
+.section__margin {
+  margin: 6rem 8rem;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.path1 {
+  position: absolute;
+  width: 100%;
+  height: 1vh;
+  background: url('./assets/path1.png') center no-repeat;
+  background-size: cover;
+}
+.path2 {
+  position: absolute;
+  width: 100%;
+  height: 40.2vh;
+  background: url('./assets/path2.png') center no-repeat;
+  background-size: cover;
+  margin-top: -10%;
+  z-index: 0;
+}
+.path3 {
+  position: absolute;
+  width: 100%;
+  height: 40.2vh;
+  background: url('./assets/path3.png') center no-repeat;
+  background-size: cover;
+  margin-top: -2%;
+  z-index: 0;
+}
+.path4 {
+  position: absolute;
+  width: 100%;
+  height: 40.2vh;
+  background: url('./assets/path3.png') center no-repeat;
+  background-size: cover;
+  margin-top: -2%;
+  z-index: 0;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 2200px){
+  .path2{
+    margin-top: -5%;
+  }
+  .section__padding {
+    padding: 18rem 8rem;
+}
+.path3{
+  margin-top: -10%;
+}
+}
+@media screen and (max-width: 1650px){
+  
+}
+@media screen and (max-width: 1400px){
+  .path2{
+    height: 42.5vh;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .path2 {
+    height: 30vh;
+}
+.section__padding {
+  padding: 6rem 4rem;
+}
+.path3{
+  margin-top: -20%;
+  height: 30vh;
+}
+.path4{
+  margin-top: -10%;
+  height: 30vh;
+}
+}
+
+@media screen and (max-width: 550px) {
+  
+  .section__padding {
+    padding: 6rem 0rem;
+}
+.path3 {
+  margin-top: -30%;
+  height: 20vh;
+}
+.path4 {
+  margin-top: -15%;
+  height: 20vh;
+}
+}

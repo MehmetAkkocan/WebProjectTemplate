@@ -1,0 +1,10 @@
+export {default as Link1} from './link1/link1'
+export {default as Navbar} from './navbar/navbar'
+export {default as Logo} from './logo/logo'
+export {default as Team} from './team/team'
+export {default as Link2} from './link2/link2'
+export {default as Link3} from './link3/link3'
+export {default as Footer} from './footer/footer'
+export {default as Home} from './home/home'
+export {default as Gallery} from './gallery/gallery'
+
